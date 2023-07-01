@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-todo-page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TODO-TABLE</h1><hr>
+        <br>
+      </header>
+      <form action="/create" method="post">
+        
+        <label for="tname">Todo-Nmae:</label>
+        <input type="text" id="tname" name="tname" required>
+        <br><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required>
+        <br><br>
+
+        <button type="submit" id="submit">Add Item</button>
+    
+    </form>
+    <h3 class="underline">Todos-Remaining</h3>
+    <ul id="table1" class="order-summary"></ul>
+
+    <h3 class="underline">Todos Done!</h3>
+    <ul id="table2" class="order-summary"></ul>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</body>
+</html>
